@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main(){
+	int s,n;
+	double sum;
+	printf("please input student's scores:\n");
+	for(sum=n=0;scanf("%d,&s")!=EOF;n++) sum+=s;
+	if(n!=0) printf("\nAverage score=%f",sum/n);
+	else printf("\nNo score input!");
+}
