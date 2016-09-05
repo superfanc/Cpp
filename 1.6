@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <iostream>
+int main(void){
+	int i,n;
+	long f;
+	std::cout<<"please input n:\n";
+	std::cin>>n;
+	for(f=i=1;i<=n;i++) f*=i;
+	std::cout<<"\n";    //输出换行之后再次将n赋值给cout
+	n=printf("%ld",f);     //pirntf返回被打印字符的个数，此时n=1...,这个2是printf打印的
+	std::cout<<"!=\nNumber of digits="<<n;
+}
